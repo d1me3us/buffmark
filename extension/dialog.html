@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buffmark</title>
+    <link rel="stylesheet" href="dialog.css">
+  </head>
+  <body>
+    <main>
+      <h1>Add to Bookmarks</h1>
+
+      <form id="bookmark-form">
+        <label>
+          Name
+          <input id="title" name="title" type="text" autocomplete="off" required>
+        </label>
+
+        <label>
+          Folder
+          <select id="folder" name="folder" required></select>
+        </label>
+
+        <label>
+          Text
+          <textarea id="text" name="text" rows="4" spellcheck="false"></textarea>
+        </label>
+
+        <p id="status" role="status" aria-live="polite"></p>
+
+        <div class="actions">
+          <button id="cancel" type="button">Cancel</button>
+          <button type="submit">Add bookmark</button>
+        </div>
+      </form>
+    </main>
+
+    <script src="dialog.js"></script>
+  </body>
+</html>
